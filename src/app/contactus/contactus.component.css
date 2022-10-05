@@ -1,0 +1,30 @@
+P{
+    text-align: right;
+    font-family: 'Tajawal';
+}
+.contactsubmit{
+  width:100%;
+  background-color:#12123c;
+  color:white;
+  border: none;
+}
+.contactus{
+  background-color: #12123c;
+  color:#ffffff;
+  font-family: 'Tajawal';
+  padding-top: 30px;
+}
+.contactwithus{
+  font-weight: 700;
+}
+.main{
+  font-weight: 500;
+  color:#8A8AA5;
+}
+.contactUsForm{
+  font-family: 'Tajawal';
+}
+.arrow{
+  color:#fff;
+  font-size: 20px;
+}

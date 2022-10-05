@@ -1,0 +1,23 @@
+.navbar{
+    background-color: #12123c;
+}
+ .navbar a{
+    color:#ffffff;
+    font-family: 'Tajawal';
+ }
+ .logo img{
+    width:150px;
+    height:50px;
+ }
+ .login{
+   background-color: #8A8AA5;
+   border: none;
+   color:#ffffff;
+   font-family: 'Tajawal';
+ }
+ .register{
+   background-color: #F36E32;
+   border:none;
+   font-family: 'Tajawal';
+   color:#ffffff;
+ }

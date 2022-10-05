@@ -1,0 +1,72 @@
+<section>
+    <div class="contactus" >
+        <div class="container">
+       <p class="main">الرئيسيه</p>
+       <p class="contactwithus">تواصل معانا</p>
+    </div>
+</div>
+    
+</section>
+<section>
+    <h1 class="text-center m-5 ">أتصل بنا</h1>
+</section>
+<section class="mb-5">
+    <div class="container">
+    <div class="row">
+        <div class="col-md-6">
+
+        <form class="contactUsForm" [formGroup]='contactForm' (ngSubmit)="tosubmit()">
+         <div class="form-groub mb-2">
+            <input formControlName="firstName" class="form-control" placeholder="الأسم الأول"/>
+            <div *ngIf='contactForm.controls.firstName.errors != null && contactForm.controls.firstName.touched' class=" m-2 text-danger">
+                <p>الاسم الاول غير صحيح</p>
+            </div>
+         </div>
+         <div class="form-groub mb-2">
+            <input formControlName="middleName" class="form-control" placeholder="الأسم الثاني"/>
+            <div *ngIf='contactForm.controls.middleName.errors != null && contactForm.controls.middleName.touched' class="m-2 text-danger">
+                <p>الاسم الثاني غير صحيح</p>
+            </div>
+         </div>
+         <div class="form-groub mb-2">
+            <input formControlName="lastName" class="form-control" placeholder="الأسم العائلى"/>
+            <div *ngIf='contactForm.controls.lastName.errors != null && contactForm.controls.lastName.touched' class=" m-2 text-danger">
+                <p>الاسم العائلى غير صحيح</p>
+            </div>
+         </div>
+         <div class="form-groub mb-2">
+            <input formControlName="title" class="form-control" placeholder="المهنه"/>
+            <div *ngIf='contactForm.controls.title.errors != null && contactForm.controls.title.touched' class=" m-2 text-danger">
+                <p>المهنه غير صحيحه</p>
+            </div>
+         </div>
+          
+         <div class="form-groub mb-2">
+            <textarea formControlName="description" class="form-control" placeholder="أكتب وصف"></textarea>
+            <div *ngIf='contactForm.controls.description.errors != null && contactForm.controls.description.touched' class="m-2 text-danger">
+                <p>أكتب ما لا يقل عن سطرين</p>
+            </div>
+         </div>
+
+         <div class="form-groub mb-2">
+            <input formControlName="email" class="form-control" placeholder="الايميل"/>
+            <div *ngIf='contactForm.controls.email.errors != null && contactForm.controls.email.touched' class=" m-2 text-danger">
+                <p>الايميل غير صحيح</p>
+            </div>
+         </div>
+
+         <div class="form-groub mb-2">
+            <textarea formControlName="others" class="form-control" placeholder="أخرى"></textarea>
+            <div *ngIf='contactForm.controls.others.errors != null && contactForm.controls.others.touched' class=" m-2 text-danger">
+                <p>يرجي التاكد</p>
+            </div>
+         </div>
+
+         <button [disabled]="!contactForm.valid" type="submit" class="contactsubmit rounded py-1" >ارسال</button>
+        </form>
+
+        </div>
+        <div class="col-md-6"><app-map></app-map></div>
+    </div>
+</div>
+</section>

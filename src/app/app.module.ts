@@ -3,14 +3,26 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { GoogleMapsModule } from '@angular/google-maps';
+import { MapComponent } from './map/map.component';
+import { NavbarComponent } from './navbar/navbar.component';
+import { ContactusComponent } from './contactus/contactus.component'
+import { ReactiveFormsModule } from '@angular/forms';
+import {HttpClientModule} from '@angular/common/http'
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    MapComponent,
+    NavbarComponent,
+    ContactusComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    GoogleMapsModule,
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
